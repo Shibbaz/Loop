@@ -40,3 +40,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rails_event_store', '~> 2.9.1'
 gem 'graphql'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 6.0.0'
+end
