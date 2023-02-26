@@ -64,6 +64,7 @@ GEM
       ruby_event_store (= 2.9.1)
     arkency-command_bus (0.4.1)
       concurrent-ruby
+    bcrypt (3.1.16)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
@@ -73,6 +74,10 @@ GEM
     date (3.3.3)
     diff-lcs (1.5.0)
     erubi (1.12.0)
+    factory_bot (6.2.0)
+      activesupport (>= 5.0.0)
+    faker (3.1.1)
+      i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
     globalid (1.1.0)
       activesupport (>= 5.0)
@@ -155,6 +160,10 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    rspec (3.12.0)
+      rspec-core (~> 3.12.0)
+      rspec-expectations (~> 3.12.0)
+      rspec-mocks (~> 3.12.0)
     rspec-core (3.12.1)
       rspec-support (~> 3.12.0)
     rspec-expectations (3.12.2)
@@ -180,6 +189,8 @@ GEM
     ruby_event_store-browser (2.9.1)
       rack
       ruby_event_store (= 2.9.1)
+    ruby_event_store-rspec (2.9.1)
+      rspec (~> 3.0)
     spring (4.1.1)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
@@ -201,8 +212,11 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt (~> 3.1.13)
   bootsnap (>= 1.4.4)
   byebug
+  factory_bot
+  faker
   graphql
   listen (~> 3.3)
   pg (~> 1.1)
@@ -210,6 +224,7 @@ DEPENDENCIES
   rails (~> 6.1.7, >= 6.1.7.2)
   rails_event_store (~> 2.9.1)
   rspec-rails (~> 6.0.0)
+  ruby_event_store-rspec
   spring
   tzinfo-data
 
