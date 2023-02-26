@@ -44,3 +44,9 @@ gem 'graphql'
 group :development, :test do
   gem 'rspec-rails', '~> 6.0.0'
 end
+gem 'bcrypt', '~> 3.1.13'
+gem 'faker'
+gem 'factory_bot'
+group :test do
+  gem "ruby_event_store-rspec"
+end
